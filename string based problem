@@ -1,0 +1,23 @@
+question:
+you are given two strings A and B.your tASK IS TO FIND AND RETURN  ASTRING IN A AFTER REMOVING
+ALL THE LETTERS THAT EXIST IN STRING B .RETURN"EMPTY"IF THE OUTPUT DOES NOT CONTAIN ANY VALUE.
+
+source code:
+def leftover_string(A,B):
+    remove_set=set(B)
+    result=" "
+    for ch in A:
+        if ch not in remove_set:
+            result+=ch
+    if result:
+        print(result)
+    else:
+        print("empty")
+A="qrwyeueuw"
+B="erqy"
+leftover_string(A,B)
+
+
+
+output:
+wuuw
