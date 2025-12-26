@@ -1,0 +1,17 @@
+question:if you are given an array A of size N,where eachelement represents the number of cupcakes sold in a single transcation .
+  your task is to find and return an integer value representing the  sum of cupcakes from the transaction where 5 or more cupcakeswere sold.
+  return 0 if there is no transaction with more than 5 cupcakes sold.
+  solution:
+def cupcakes(n,arr):
+    sum=0
+    for i in range(n):
+        if arr[i]>=5:
+            sum+=arr[i]
+    print(sum)
+n=5
+arr=[8,2,5,4,5,7,8]
+cupcakes(n,arr)
+
+
+  result:
+18
