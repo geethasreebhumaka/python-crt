@@ -1,10 +1,13 @@
-x=int(input())
-for i in range(1,x+1):
-    if (i%3==0) and (i%5==0):
-        print("fizzbuzz")
-    elif(i%5==0):
-        print("buzz")
-    elif(i%3==0):
-        print("fizz")
-    else:
-        print(i)
+def check(x):
+    l=0
+    r=len(x)-1
+    while l<r:
+        if x[l]!=x[r]:
+            return"not palindrome"
+        else:
+           l=l+1
+           r=r-1
+    return"palindrome"
+x="madam"
+print(check(x))
+            
