@@ -1,0 +1,12 @@
+x=[2,3,5,7,9,1]
+x1=min(x)
+x2=max(x)
+min2=float('inf')
+max2=float("-inf")
+for i in range(len(x)):
+    if x1<x[i]<min2:
+        min2=x[i]
+    if x2>x[i]>max2:
+        max2=x[i]
+print(max2,min2)
+    
